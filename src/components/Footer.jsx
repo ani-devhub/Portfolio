@@ -77,19 +77,19 @@ const Footer = () => {
                             <li className='flex items-start'>
                                 <i className='fas fa-envelope text-blue-400 mt-1 mr-3'></i>
                                 <a
-                                    href='mailto:anirudha.dey@example.com'
+                                    href='mailto:anirudha.dey.official@gmail.com'
                                     className='text-gray-400 hover:text-blue-400 transition-colors'
                                 >
-                                    anirudha.dey@example.com
+                                    anirudha.dey.official@gmail.com
                                 </a>
                             </li>
                             <li className='flex items-start'>
                                 <i className='fas fa-phone-alt text-blue-400 mt-1 mr-3'></i>
                                 <a
-                                    href='tel:+919876543210'
+                                    href='tel:+916296582411'
                                     className='text-gray-400 hover:text-blue-400 transition-colors'
                                 >
-                                    +91 9876 543 210
+                                    +91 6296582411
                                 </a>
                             </li>
                         </ul>

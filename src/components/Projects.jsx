@@ -6,7 +6,7 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: 'Ecommerce Dashboard',
+            title: 'Azaadi',
             category: 'web',
             image: '/assets/images/Ems_Project.png',
             description:
@@ -17,7 +17,7 @@ const Projects = () => {
         },
         {
             id: 2,
-            title: 'Health & Fitness App',
+            title: 'Flerts',
             category: 'mobile',
             image: '/assets/images/Flerts_Project.png',
             description:
@@ -28,7 +28,7 @@ const Projects = () => {
         },
         {
             id: 3,
-            title: 'Real-time Chat Application',
+            title: 'SpinCabs',
             category: 'web',
             image: '/assets/images/Spincabs.png',
             description: 'Real-time messaging app with features like group chats, file sharing, and read receipts.',
@@ -38,7 +38,7 @@ const Projects = () => {
         },
         {
             id: 4,
-            title: 'Task Management System',
+            title: 'Oohray',
             category: 'web',
             image: '/assets/images/Oohray.png',
             description:
@@ -49,9 +49,9 @@ const Projects = () => {
         },
         {
             id: 5,
-            title: 'Weather Forecast App',
+            title: 'ShipGo',
             category: 'mobile',
-            image: '/assets/images/project5.jpg',
+            image: '/assets/images/shipgo.png',
             description: 'Mobile app providing real-time weather forecasts and alerts based on user location.',
             technologies: ['Flutter', 'Dart', 'Weather API'],
             demoLink: '#',
@@ -59,9 +59,9 @@ const Projects = () => {
         },
         {
             id: 6,
-            title: 'Personal Finance Tracker',
+            title: 'CAMMaPS',
             category: 'web',
-            image: '/assets/images/project6.jpg',
+            image: '/assets/images/Cammaps.png',
             description:
                 'Web application for tracking personal finances, expenses, and investments with visual reports.',
             technologies: ['React', 'Chart.js', 'Express', 'MongoDB'],
@@ -135,20 +135,19 @@ const Projects = () => {
                                 />
                                 <div className='absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4'>
                                     <div className='flex gap-3'>
-                                        <a
-                                            href={project.demoLink}
+                                        {/* <a
                                             className='bg-blue-500 hover:bg-blue-600 text-white rounded-full p-2 transition-colors duration-300'
                                             title='Live Demo'
                                         >
                                             <i className='fas fa-external-link-alt'></i>
-                                        </a>
-                                        <a
+                                        </a> */}
+                                        {/* <a
                                             href={project.codeLink}
                                             className='bg-gray-700 hover:bg-gray-600 text-white rounded-full p-2 transition-colors duration-300'
                                             title='View Code'
                                         >
                                             <i className='fas fa-code'></i>
-                                        </a>
+                                        </a> */}
                                     </div>
                                 </div>
                             </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import emailjs from 'emailjs-com';
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -23,17 +23,22 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulating form submission
-        setTimeout(() => {
-            setIsSubmitting(false);
-            setSubmitStatus('success');
-            setFormData({ name: '', email: '', subject: '', message: '' });
+        emailjs
+            .send('service_s0wsybe', 'template_jxr7ict', formData, '4yT0nAU8p5Z1-7-4N')
+            .then(() => {
+                setIsSubmitting(false);
+                setSubmitStatus('success');
+                setFormData({ name: '', email: '', subject: '', message: '' });
 
-            // Reset success message after 5 seconds
-            setTimeout(() => {
-                setSubmitStatus(null);
-            }, 5000);
-        }, 1500);
+                setTimeout(() => {
+                    setSubmitStatus(null);
+                }, 5000);
+            })
+            .catch((error) => {
+                console.error('FAILED...', error);
+                setIsSubmitting(false);
+                setSubmitStatus('error');
+            });
     };
 
     return (
@@ -73,7 +78,7 @@ const Contact = () => {
                                     <div>
                                         <h4 className='font-semibold text-white mb-1'>Email</h4>
                                         <a
-                                            href='mailto:anirudha.dey@example.com'
+                                            href='mailto:anirudha.dey.official@gmail.com'
                                             className='text-gray-400 hover:text-blue-400 transition-colors'
                                         >
                                             anirudha.dey.official@gmail.com
