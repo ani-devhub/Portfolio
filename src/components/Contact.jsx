@@ -75,11 +75,11 @@ const Contact = () => {
                                     <div className='bg-blue-500/20 p-3 rounded-full mr-4'>
                                         <i className='fas fa-envelope text-blue-400'></i>
                                     </div>
-                                    <div>
+                                    <div className='w-full overflow-hidden'>
                                         <h4 className='font-semibold text-white mb-1'>Email</h4>
                                         <a
                                             href='mailto:anirudha.dey.official@gmail.com'
-                                            className='text-gray-400 hover:text-blue-400 transition-colors'
+                                            className='text-gray-400 hover:text-blue-400 transition-colors break-all'
                                         >
                                             anirudha.dey.official@gmail.com
                                         </a>

@@ -5,7 +5,7 @@ const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
 
-    const roles = ['Software Developer', 'Fullstack Developer', 'Frontend Developer', 'Backend Developer'];
+    const roles = ['Software Developer', 'Fullstack Developer'];
 
     useEffect(() => {
         const typeSpeed = 100;
