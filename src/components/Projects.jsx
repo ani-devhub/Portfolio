@@ -10,10 +10,8 @@ const Projects = () => {
             category: 'web',
             image: '/assets/images/Ems_Project.png',
             description:
-                'A modern e-commerce admin dashboard built with React and Redux for managing products, orders, and customer data.',
-            technologies: ['React', 'Redux', 'Node.js', 'MongoDB'],
-            demoLink: '#',
-            codeLink: '#',
+                'A full-featured Employee Management System designed to streamline HR and accounts operations by tracking employee data, attendance, and payroll efficiently.',
+            technologies: ['Angular', 'Node.js', 'MongoDB'],
         },
         {
             id: 2,
@@ -21,41 +19,35 @@ const Projects = () => {
             category: 'mobile',
             image: '/assets/images/Flerts_Project.png',
             description:
-                'Cross-platform mobile application for health tracking and fitness routines with personalized workout plans.',
-            technologies: ['React Native', 'Firebase', 'Redux'],
-            demoLink: '#',
-            codeLink: '#',
+                'A dual-platform (web and mobile) financial alert system that provides users with real-time updates, budget tracking, and spending insights to promote better financial decisions.',
+            technologies: ['React', 'React Native', 'Firebase', 'Redux'],
         },
         {
             id: 3,
             title: 'SpinCabs',
-            category: 'web',
+            category: 'web & mobile',
             image: '/assets/images/Spincabs.png',
-            description: 'Real-time messaging app with features like group chats, file sharing, and read receipts.',
-            technologies: ['Angular', 'Socket.io', 'Express', 'MongoDB'],
-            demoLink: '#',
-            codeLink: '#',
+            description:
+                'A scalable ride-booking platform, featuring separate interfaces for drivers, users, and admins. Includes live tracking, trip management, and booking history.',
+            technologies: ['React', 'Android', 'Socket.io', 'Express', 'MongoDB'],
         },
         {
             id: 4,
             title: 'Oohray',
-            category: 'web',
+            category: 'web & mobile',
             image: '/assets/images/Oohray.png',
             description:
-                'Comprehensive task management system with features like task assignment, progress tracking, and reporting.',
-            technologies: ['React', 'Node.js', 'PostgreSQL'],
-            demoLink: '#',
-            codeLink: '#',
+                'A hybrid rental management system supporting both web and mobile platforms. It includes features like property listings, booking management, and payment tracking.',
+            technologies: ['React Native', 'Angular', 'Node.js', 'SQL'],
         },
         {
             id: 5,
             title: 'ShipGo',
             category: 'mobile',
             image: '/assets/images/shipgo.png',
-            description: 'Mobile app providing real-time weather forecasts and alerts based on user location.',
-            technologies: ['Flutter', 'Dart', 'Weather API'],
-            demoLink: '#',
-            codeLink: '#',
+            description:
+                'A warehouse management mobile app that offers real-time tracking of inventory, shipping, and deliveries, optimized for logistics and supply chain operations.',
+            technologies: ['Android', 'Java', 'Firebase'],
         },
         {
             id: 6,
@@ -63,15 +55,14 @@ const Projects = () => {
             category: 'web',
             image: '/assets/images/Cammaps.png',
             description:
-                'Web application for tracking personal finances, expenses, and investments with visual reports.',
-            technologies: ['React', 'Chart.js', 'Express', 'MongoDB'],
-            demoLink: '#',
-            codeLink: '#',
+                'A web-based case management platform where advisors can assign, track, and resolve user cases efficiently with real-time updates and visual analytics.',
+            technologies: ['React', 'Redux', 'Node.js', 'MongoDB'],
         },
     ];
 
     // Filter projects based on category
-    const filteredProjects = filter === 'all' ? projects : projects.filter((project) => project.category === filter);
+    const filteredProjects =
+        filter === 'all' ? projects : projects.filter((project) => project.category.toLowerCase().includes(filter));
 
     return (
         <div className='py-20 bg-gray-900'>
