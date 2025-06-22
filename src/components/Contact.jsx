@@ -107,7 +107,9 @@ const Contact = () => {
                                 <h4 className='font-semibold text-white mb-4'>Connect With Me</h4>
                                 <div className='flex space-x-4'>
                                     <a
-                                        href='#'
+                                        href='https://www.linkedin.com/in/anirudha-dey'
+                                        target='_blank'
+                                        rel='noopener noreferrer'
                                         className='bg-gray-800 hover:bg-blue-500/20 p-3 rounded-full text-gray-400 hover:text-blue-400 transition-all duration-300'
                                     >
                                         <i className='fab fa-linkedin-in'></i>
@@ -123,12 +125,6 @@ const Contact = () => {
                                         className='bg-gray-800 hover:bg-blue-500/20 p-3 rounded-full text-gray-400 hover:text-blue-400 transition-all duration-300'
                                     >
                                         <i className='fab fa-twitter'></i>
-                                    </a>
-                                    <a
-                                        href='#'
-                                        className='bg-gray-800 hover:bg-blue-500/20 p-3 rounded-full text-gray-400 hover:text-blue-400 transition-all duration-300'
-                                    >
-                                        <i className='fab fa-dribbble'></i>
                                     </a>
                                 </div>
                             </div>

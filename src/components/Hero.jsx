@@ -85,7 +85,12 @@ const Hero = () => {
 
                     {/* Social Icons */}
                     <div className='flex justify-center md:justify-start space-x-6 mb-8'>
-                        <a href='#' className='text-gray-400 hover:text-blue-500 transition-colors duration-300 p-2'>
+                        <a
+                            href='https://www.linkedin.com/in/anirudha-dey'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='text-gray-400 hover:text-blue-500 transition-colors duration-300 p-2'
+                        >
                             <i className='fab fa-linkedin text-xl sm:text-2xl'></i>
                         </a>
                         <a href='#' className='text-gray-400 hover:text-blue-500 transition-colors duration-300 p-2'>

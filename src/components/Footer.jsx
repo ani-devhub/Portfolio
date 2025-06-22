@@ -14,7 +14,12 @@ const Footer = () => {
                             skills.
                         </p>
                         <div className='flex space-x-4 mb-4'>
-                            <a href='#' className='text-gray-400 hover:text-blue-400 transition-colors'>
+                            <a
+                                href='https://www.linkedin.com/in/anirudha-dey'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='text-gray-400 hover:text-blue-400 transition-colors'
+                            >
                                 <i className='fab fa-linkedin-in'></i>
                             </a>
                             <a href='#' className='text-gray-400 hover:text-blue-400 transition-colors'>
