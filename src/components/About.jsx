@@ -46,7 +46,7 @@ const About = () => {
                                 style={{ height: '500px' }}
                             />
                             <div className='absolute bottom-0 right-0 bg-blue-600 py-2 px-6 rounded-tl-lg rounded-br-lg shadow-lg font-medium z-20'>
-                                2+ Years Experience
+                                3+ Years Experience
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ const About = () => {
                                 <div data-aos='fade-up'>
                                     <h3 className='text-xl font-semibold mb-4 text-white'>Who I Am</h3>
                                     <p className='mb-4'>
-                                        I'm Anirudha Dey, a passionate software developer with 2+ years of professional
+                                        I'm Anirudha Dey, a passionate software developer with 3+ years of professional
                                         experience, specializing in web and mobile application development. I thrive on
                                         solving complex problems and building intuitive, user-friendly applications.
                                     </p>
@@ -120,7 +120,7 @@ const About = () => {
                                         </div>
                                         <div>
                                             <p>
-                                                <span className='font-medium text-blue-400'>Experience:</span> 2+ Years
+                                                <span className='font-medium text-blue-400'>Experience:</span> 3+ Years
                                             </p>
                                             <p>
                                                 <span className='font-medium text-blue-400'>Availability:</span>{' '}
