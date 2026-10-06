@@ -1,0 +1,75 @@
+import { ExperienceItem } from '@/types';
+
+export const EXPERIENCES: ExperienceItem[] = [
+  {
+    id: 'bassetti-fullstack',
+    title: 'Full Stack Developer',
+    company: 'BASSETTI ITES PVT. LTD.',
+    location: 'Kolkata, India',
+    period: 'Jul 2023 – Present',
+    startDate: '2023-07',
+    endDate: 'Present',
+    type: 'Full-time',
+    current: true,
+    summary:
+      'Leading end-to-end full stack development for enterprise engineering platforms, internal professional collaboration networks (Prodiges), and centralized product administration suites (TxAdministration).',
+    responsibilities: [
+      'Architect and develop high-performance enterprise user interfaces using Angular and React with reactive RxJS/Redux state flows.',
+      'Design, secure, and deploy RESTful micro-services and backend endpoints using Node.js, Express, C# .NET, and FastAPI with JWT and RBAC security.',
+      'Structure MongoDB document collections and MySQL relational schemas with indexing strategies, ensuring low-latency transactions and strict data integrity.',
+      'Direct cross-functional Agile sprint cycles, conducting thorough code reviews, mentoring junior engineers, and driving CI/CD reliability.',
+    ],
+    technologies: [
+      'Angular',
+      'React',
+      'TypeScript',
+      'C# / .NET',
+      'MySQL',
+      'FastAPI',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'REST APIs',
+      'JWT Auth',
+      'Docker',
+    ],
+    impactHighlights: [
+      'Architected internal enterprise social platforms (Prodiges) and centralized product administration consoles (TxAdministration) adopted across organization workflows.',
+      'Reduced database query overhead by 30% through indexed aggregation pipelines and normalized document models.',
+      'Standardized reusable modular UI component design systems, improving development velocity across sprint cycles.',
+    ],
+  },
+  {
+    id: 'bassetti-intern',
+    title: 'Developer (Intern)',
+    company: 'BASSETTI ITES PVT. LTD.',
+    location: 'Kolkata, India',
+    period: 'Sep 2022 – Jun 2023',
+    startDate: '2022-09',
+    endDate: '2023-06',
+    type: 'Internship',
+    current: false,
+    summary:
+      'Built cross-platform mobile client components, implemented dynamic UI features from Figma specifications, and resolved application performance and stability bottlenecks.',
+    responsibilities: [
+      'Developed native-feeling mobile application modules using React Native and core JavaScript/TypeScript.',
+      'Collaborated closely with design and QA teams to translate user journey mockups into responsive, touch-friendly UI components.',
+      'Debugged asynchronous state race conditions, API integration errors, and network failure fallbacks.',
+      'Contributed to code documentation, test coverage, and automated linting configurations.',
+    ],
+    technologies: [
+      'React Native',
+      'JavaScript',
+      'Angular',
+      'Android',
+      'REST APIs',
+      'Git',
+      'CSS3/SCSS',
+    ],
+    impactHighlights: [
+      'Delivered critical feature screens for logistics and inventory tracking mobile apps ahead of schedule.',
+      'Optimized list rendering performance in React Native with virtualized lists, eliminating UI frame stutter.',
+      'Earned immediate promotion to Full-time Full Stack Developer based on technical problem-solving and rapid delivery.',
+    ],
+  },
+];

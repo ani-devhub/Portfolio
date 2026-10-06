@@ -1,17 +1,124 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth dark">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anirudha Dey | Software Developer Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Anti-flash Theme Initialization Script: Default Dark -->
+  <script>
+    (function() {
+      try {
+        // Clean legacy key if it exists
+        localStorage.removeItem('portfolio-theme');
+        var theme = localStorage.getItem('portfolio-theme-preference');
+        // Default strictly to dark unless explicitly toggled to light
+        if (theme === 'light') {
+          document.documentElement.classList.add('light');
+          document.documentElement.classList.remove('dark');
+          document.documentElement.style.colorScheme = 'light';
+        } else {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+          document.documentElement.style.colorScheme = 'dark';
+        }
+      } catch (e) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+
+  <!-- Primary Meta Tags -->
+  <title>Anirudha Dey | Full-Stack Software Engineer (3.5+ YOE)</title>
+  <meta name="title" content="Anirudha Dey | Full-Stack Software Engineer (3.5+ YOE)" />
+  <meta name="description"
+    content="Senior Full-Stack Engineer with 3.5+ years of experience architecting scalable web applications, enterprise systems, and reactive APIs using Angular, React, FastAPI, Node.js, and TypeScript." />
+  <meta name="author" content="Anirudha Dey" />
+  <meta name="keywords"
+    content="Anirudha Dey, Software Engineer, Full Stack Developer, React, Angular, FastAPI, Node.js, TypeScript, MongoDB, Kolkata, Bassetti" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#090d16" />
+  <link rel="canonical" href="https://portfolio-gray-phi-10.vercel.app/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://portfolio-gray-phi-10.vercel.app/" />
+  <meta property="og:title" content="Anirudha Dey | Full-Stack Software Engineer" />
+  <meta property="og:description"
+    content="Full-Stack Engineer with 3.5+ years of professional experience across Angular, React, FastAPI, Node.js, and TypeScript. Explore enterprise projects, technical architecture, and case studies." />
+  <meta property="og:image" content="https://portfolio-gray-phi-10.vercel.app/assets/images/profile.jpg" />
+  <meta property="profile:first_name" content="Anirudha" />
+  <meta property="profile:last_name" content="Dey" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://portfolio-gray-phi-10.vercel.app/" />
+  <meta name="twitter:title" content="Anirudha Dey | Full-Stack Software Engineer" />
+  <meta name="twitter:description"
+    content="Full-Stack Engineer with 3.5+ years of experience building scalable web architectures and robust APIs." />
+  <meta name="twitter:image" content="https://portfolio-gray-phi-10.vercel.app/assets/images/profile.jpg" />
+
+  <!-- Typography: Inter & JetBrains Mono with Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- JSON-LD Structured Data: Person & Portfolio -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://portfolio-gray-phi-10.vercel.app/#person",
+        "name": "Anirudha Dey",
+        "jobTitle": "Full-Stack Software Engineer",
+        "url": "https://portfolio-gray-phi-10.vercel.app",
+        "image": "https://portfolio-gray-phi-10.vercel.app/assets/images/profile.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/anirudha-dey",
+          "https://github.com/anirudhadey"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "BASSETTI ITES PVT. LTD."
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Maulana Abul Kalam Azad University of Technology"
+        },
+        "knowsAbout": [
+          "React",
+          "Angular",
+          "FastAPI",
+          "Node.js",
+          "TypeScript",
+          "JavaScript",
+          "MongoDB",
+          "REST APIs",
+          "Full-Stack Development"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://portfolio-gray-phi-10.vercel.app/#website",
+        "url": "https://portfolio-gray-phi-10.vercel.app",
+        "name": "Anirudha Dey Portfolio",
+        "description": "Professional developer portfolio of Anirudha Dey, Full-Stack Software Engineer.",
+        "publisher": {
+          "@id": "https://portfolio-gray-phi-10.vercel.app/#person"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
-<body>
+<body class="bg-[#090d16] text-[#f8fafc] min-h-screen selection:bg-blue-500/30 selection:text-blue-200">
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>

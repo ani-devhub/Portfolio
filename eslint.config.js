@@ -1,16 +1,22 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import react from 'eslint-plugin-react'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
+import js from '@eslint/js';
+import globals from 'globals';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
+import tsParser from '@typescript-eslint/parser';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
 
 export default [
-  { ignores: ['dist'] },
+  { ignores: ['dist', 'node_modules'] },
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+      parser: tsParser,
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
@@ -22,24 +28,18 @@ export default [
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      '@typescript-eslint': tsPlugin,
     },
     rules: {
-      // Only the most critical JavaScript errors
-      'no-undef': 'error',        // Catches undefined variables
-      
-      // Only the most critical React errors
-      'react/jsx-no-undef': 'error',            // Catches undefined variables
-      'react/jsx-no-duplicate-props': 'error',  // Duplicate props will cause unexpected behavior
-      'react/no-direct-mutation-state': 'error', // Direct state mutations break React's state management
-      
-      // Critical Hook rules - these prevent subtle bugs
-      'react-hooks/rules-of-hooks': 'error',    // Hooks must be called in the same order every render
-      
-      // Fast Refresh - only if you're using React Fast Refresh
+      'no-undef': 'off', // TypeScript handles undefined variables
+      'react/jsx-no-undef': 'error',
+      'react/jsx-no-duplicate-props': 'error',
+      'react/no-direct-mutation-state': 'error',
+      'react-hooks/rules-of-hooks': 'error',
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
       ],
     },
   },
-]
+];
